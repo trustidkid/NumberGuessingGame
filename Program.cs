@@ -8,6 +8,7 @@ namespace NumberGuessingGame
         {
     
             /*
+                PROBLEM
                 User is able to guess numbers against a number set by your program
                 If user enters anything other than number, user should be told
                 There are 3 levels, easy, medium and hard
@@ -22,13 +23,13 @@ namespace NumberGuessingGame
             */
 
             //get the user name
-            Console.WriteLine("Please can I meet your Sir/Ma");
+            Console.WriteLine("Hey! Before we proceed, your name please");
             string name = Console.ReadLine();
             //welcome message
-            Console.WriteLine("You are welcome Mr./Mrs. " + name);
+            Console.WriteLine("You are welcome (" + name+")");
 
             //set game levels
-            Console.WriteLine("There are 3 levels. 1 => Easy, 2 => Medium, 3 => Hard");
+            Console.WriteLine("There are 3 levels in this game. 1 => Easy, 2 => Medium, 3 => Hard");
             Console.WriteLine("Please enter the numerical value corresponding to your level");
             //get the level selected
             var userSelection = Console.ReadLine();
@@ -113,7 +114,7 @@ namespace NumberGuessingGame
                      */
                     int guessValue = int.Parse(userInput);
                     if(guessValue < 1 || guessValue > 10){
-                        Console.WriteLine("Please read instruction again. You can not pick a number above 10 or less than 1");
+                        Console.WriteLine("Please read instruction again. You can't pick number above 10 or less than 1");
                     }
                     if(guessValue == randomNumberEasy){
                         Console.WriteLine("Whaoo! You guess right!");
@@ -125,6 +126,7 @@ namespace NumberGuessingGame
                     if(i == trial && guessValue != randomNumberEasy){
                         Console.WriteLine("You have come to the end of the Game!");
                         Console.WriteLine("***GAME OVER***");
+                        Console.WriteLine("THE NUMBER IS = ***" + randomNumberHard+"***" );
                         return;
                     }
                     Console.WriteLine("Oh Sorry, that was wrong Mr./Mrs. " + name );
@@ -182,6 +184,7 @@ namespace NumberGuessingGame
                     if(i == trial && guessValue != randomNumberMedium){
                         Console.WriteLine("You have come to the end of the Game!");
                         Console.WriteLine("***GAME OVER***");
+                        Console.WriteLine("THE NUMBER IS = ***" + randomNumberHard+"***" );
                         return;
                     }
                     Console.WriteLine("Oh Sorry, that was wrong Mr./Mrs. " + name );
@@ -199,7 +202,7 @@ namespace NumberGuessingGame
                 Console.WriteLine("***YOU HAVE 3 CHANCES TO TRY***");
                 Console.WriteLine("***INSTRUCTION: PICK A NUMBER BETWEEN 1 AND 50***");
                 int trial = 2;
-            
+                
                 for(int i = 0; i <= trial; i++){
                     
                     if(i > 0){
@@ -226,8 +229,8 @@ namespace NumberGuessingGame
                     
                     //check user chosen number not outside the range
                     if(guessValue < 1 || guessValue > 50){
-                        Console.WriteLine("Please read instruction again. You can not pick a number above 50 or less than 1");
-                        return;
+                        Console.WriteLine("Please read instruction again. You can't pick a number above 50 or less than 1");
+                        //return;
                     }
                     //check if user guess right
                     if(guessValue == randomNumberHard){
@@ -237,16 +240,18 @@ namespace NumberGuessingGame
                         }
                         return;
                     }
-                    //user fails after all trials
+                    //user fails after all tries
                     if(i == trial && guessValue != randomNumberHard){
                         Console.WriteLine("You have come to the end of the Game!");
                         Console.WriteLine("***GAME OVER***");
+                        Console.WriteLine("THE NUMBER IS ***" + randomNumberHard+"***" );
                         return;
                     }
                     
                     Console.WriteLine("Oh Sorry, that was wrong Mr./Mrs. " + name );
                     Console.WriteLine("You have "+ (trial - i) + " more trial(s) to go.");
                 }
+                
             }
 
         }
