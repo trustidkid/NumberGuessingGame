@@ -1,0 +1,11 @@
+/Users/semiubiliaminu/my_folder/dotnet/NumberGuessingGame/bin/Debug/netcoreapp3.1/NumberGuessingGame
+/Users/semiubiliaminu/my_folder/dotnet/NumberGuessingGame/bin/Debug/netcoreapp3.1/NumberGuessingGame.deps.json
+/Users/semiubiliaminu/my_folder/dotnet/NumberGuessingGame/bin/Debug/netcoreapp3.1/NumberGuessingGame.runtimeconfig.json
+/Users/semiubiliaminu/my_folder/dotnet/NumberGuessingGame/bin/Debug/netcoreapp3.1/NumberGuessingGame.runtimeconfig.dev.json
+/Users/semiubiliaminu/my_folder/dotnet/NumberGuessingGame/bin/Debug/netcoreapp3.1/NumberGuessingGame.dll
+/Users/semiubiliaminu/my_folder/dotnet/NumberGuessingGame/bin/Debug/netcoreapp3.1/NumberGuessingGame.pdb
+/Users/semiubiliaminu/my_folder/dotnet/NumberGuessingGame/obj/Debug/netcoreapp3.1/NumberGuessingGame.csprojAssemblyReference.cache
+/Users/semiubiliaminu/my_folder/dotnet/NumberGuessingGame/obj/Debug/netcoreapp3.1/NumberGuessingGame.AssemblyInfoInputs.cache
+/Users/semiubiliaminu/my_folder/dotnet/NumberGuessingGame/obj/Debug/netcoreapp3.1/NumberGuessingGame.AssemblyInfo.cs
+/Users/semiubiliaminu/my_folder/dotnet/NumberGuessingGame/obj/Debug/netcoreapp3.1/NumberGuessingGame.dll
+/Users/semiubiliaminu/my_folder/dotnet/NumberGuessingGame/obj/Debug/netcoreapp3.1/NumberGuessingGame.pdb
